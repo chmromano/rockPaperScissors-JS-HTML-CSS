@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R.P.S.</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="myscript.js" defer></script>
+</head>
+<body>
+    <section class="game">
+
+        <!-- Score page. -->
+        <div class="score">
+            <div class="player-score">
+                <h2>Player</h2>
+                <p>0</p>
+            </div>
+            <div class="computer-score">
+                <h2>Computer</h2>
+                <p>0</p>
+            </div>
+        </div>
+
+        <!-- Intro page. -->
+        <div class="intro">
+            <h1>Rock Paper Scissors!</h1>
+            <button>Let's play!</button>
+        </div>
+
+        <!-- Match page. -->
+        <div class="match fadeOut">
+            <h2 class="winner">Choose an option</h2>
+            <div class="hands">
+                <img class="player-hand" src="./assets/rock.png" alt="">
+                <img class="computer-hand" src="./assets/rock.png" alt="">
+            </div>
+            <div class="options">
+                <button class="rock">rock</button>
+                <button class="paper">paper</button>
+                <button class="scissors">scissors</button>
+            </div>
+            <button class="openSettings"></button>
+            <p>Wins total: <span class="winsTotal">10</span> | Wins in a row: <span class="winsInRow">3</span></p>
+        </div>
+
+        <!-- Game over page. -->
+        <div class="endScreen fadeOut">
+            <h1>Game Over</h1>
+            <h2></h2>
+            <button>Restart</button>
+        </div>
+
+        <!-- Settings page. -->
+        <div class="settingsPage fadeOut">
+            <button class="closeSettings">X</button>
+            <h1>Settings</h1>
+            <p class="warning"></p>
+            <h2>How many wins to win?</h2>
+            <input class="winsToWin" placeholder="3-99" maxlength="2">
+            <h2>How many wins in a row?</h2>
+            <input class="rowWins" placeholder="2-9" maxlength="1">           
+            <button class="applySettings">Apply</button>
+            <p>Game will restart</p>
+        </div>
+    </section>
+    
+    <footer>Settings icon taken from <a href="https://fontawesome.com/" target="_blank">FontAwesome</a></footer>
+</body>
+</html>
